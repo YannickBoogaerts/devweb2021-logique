@@ -31,6 +31,13 @@ Début décomposition
 	afficher "Somme : "
 	saisir somme
 	
+	si somme MOD 0.1 != 0
+		alors
+			somme <- somme + ( 0.1 - somme MOD 0.1)
+	fin si
+	
+	
+	
 	si somme >= 100
 		alors
 			afficher somme DIV 100, "Billets de 100 €"
