@@ -34,5 +34,18 @@ Début décomposition
 	afficher somme DIV 100, "Billets de 100 €"
 	somme <- somme MOD 100
 	afficher somme DIV 50, "Billets de 50 €"
+	somme <- somme MOD 50
+	afficher somme DIV 20, "Billets de 20 €"
+	somme <- somme MOD 20
+	afficher somme DIV 5, "Billets de 5 €"
+	somme <- somme MOD 5
+	afficher somme DIV 2, "Pièces de 2 €"
+	somme <- somme MOD 2
+	afficher somme DIV 1, "Pièces de 1 €"
+	somme <- somme MOD 1
+	afficher somme DIV 0.5, "Pièces de 0.5 €"
+	somme <- somme MOD 0.5
+	afficher somme DIV 0.2, "Pièces de 0.2 €"
+	somme <- somme MOD 0.2
 	
 fin décomposition
