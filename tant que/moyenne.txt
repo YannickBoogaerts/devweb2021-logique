@@ -1,0 +1,24 @@
+Debut Moyenne
+	variables locales
+		var somme :N <- 0
+		var nbValeurs :N <- 0
+		var entree :N <- 0
+	fin variables
+	
+	affichage "Entrez une suite de valeurs terminiée par 100"
+	Saisir entree
+	
+	tant que entree != 100
+		somme <- somme + entree
+		nbValeurs <- nbValeurs + 1
+		Saisir entree
+	fin tant que
+	
+	si nbValeurs > 0
+		alors
+			afficher "moyenne : ", somme / nbValeurs
+		sinon
+			afficher "pas de valeurs entrées"
+	fin si	
+	
+Fin Moyenne
