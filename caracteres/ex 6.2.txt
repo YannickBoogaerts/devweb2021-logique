@@ -1,0 +1,16 @@
+6.2	 Recherche texte
+--------------------
+
+Ecrire un programme qui demande à l’utilisateur d’entrer un texte source et un texte à rechercher.
+
+Le programme affichera :
+  •  La première position où le texte à rechercher se trouve dans le texte source.
+  •  La dernière position.
+  •  Le nombre de fois qu’il apparait.
+  
+Si le texte à rechercher ne se trouve pas dans le texte source, le programme affichera un simple message.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

@@ -1,0 +1,16 @@
+6.1	 Recherche caractère
+------------------------
+
+Ecrire un programme qui demande à l’utilisateur d’entrer un texte et un caractère.
+
+Le programme affichera :
+  •  La première position où le caractère se trouve dans le texte.
+  •  La dernière position.
+  •  Le nombre de fois qu’il apparait.
+  
+Si le caractère ne se trouve pas dans le texte, le programme affichera un simple message.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
