@@ -1,0 +1,90 @@
+Décomposition d'une somme en billets et pieces
+===============================================
+
+Enoncé
+------
+
+Écrire le programme qui permet de décomposer une somme d’argent lue au clavier.
+	Coupures disponibles : 
+		Billets : 100€, 50€, 20€, 5€
+		Pièces : 2€, 1€, 0,5€ , 0,2€
+	Contraintes :
+		Le total de la décomposition sera plus grand ou égale à la somme entrée.
+		Le nombre de coupures de la décomposition sera le plus petite possible.
+	Exemple:
+		254,18 € se décompose en : 
+			2 billets de 100 €,
+			1 billet de 50 €,
+			2 pièces de 2 €,
+			1 pièce de 0,2 €.
+
+
+Solution
+--------
+
+Début décomposition
+	Variables locales
+		var somme :N <- 0
+		var p05 :B <- faux
+	fin variables locales
+	
+	afficher "Décomposition d'une somme en billets et pièces"
+	afficher "Somme : "
+	saisir somme
+	
+	si somme MOD 0.1 != 0
+		alors
+			somme <- somme + ( 0.1 - somme MOD 0.1)
+	fin si
+	
+	si somme MOD 0.2 != 0
+		alors
+		si somme >= 0.5
+			alors
+				somme <- somme - 0.5
+				p05 <- vrai
+			sinon
+				somme <- somme +0.1
+		fin si
+	fin si
+	
+	si somme >= 100
+		alors
+			afficher somme DIV 100, "Billets de 100 €"
+			somme <- somme MOD 100
+	fin si
+	si somme >= 50
+		alors
+			afficher somme DIV 50, "Billets de 50 €"
+			somme <- somme MOD 50
+	fin si
+	si somme >= 20
+		alors
+			afficher somme DIV 20, "Billets de 20 €"
+			somme <- somme MOD 20
+	fin si
+	si somme >= 5
+		alors
+			afficher somme DIV 5, "Billets de 5 €"
+			somme <- somme MOD 5
+	fin si
+	si somme >= 2
+		alors
+			afficher somme DIV 2, "Pièces de 2 €"
+			somme <- somme MOD 2
+	fin si
+	si somme >= 1
+		alors
+			afficher somme DIV 1, "Pièces de 1 €"
+			somme <- somme MOD 1
+	fin si
+	si p05
+		alors
+			afficher somme DIV 0.5, "Pièces de 0.5 €"
+	fin si
+	si somme >= 0.2
+		alors
+			afficher somme DIV 0.2, "Pièces de 0.2 €"
+			somme <- somme MOD 0.2
+	fin si
+fin décomposition
