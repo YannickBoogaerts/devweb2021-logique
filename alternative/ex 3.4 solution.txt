@@ -1,0 +1,52 @@
+Debut comparaison
+	Variables locales
+		var a :N <- 0
+		var b :N <- 0
+		var c :N <- 0
+		var temp :N <- 0
+	fin variables
+	
+	affichage "A :"
+	saisir a
+	affichage "B :"
+	saisir b
+	affichage "C :"
+	saisir c
+	
+	si a > b
+		alors
+			temp <- a
+			a <- b
+			b <- temp
+	fin si
+	
+	si b > c
+		alors
+			temp <- b
+			b <- c
+			c <- temp
+			si a > b
+				alors
+					temp <- a
+					a <- b
+					b <- temp
+			fin si
+	fin si
+	
+	si a < b
+		alors
+			si b < c
+				alors
+					afficher a, " < ", b, " < ",c
+				sinon
+					afficher a, " < ", b, " = ",c
+			fin si
+		sinon
+			si b < c
+				alors
+					afficher a, " = ", b, " < ",c
+				sinon
+					afficher a, " = ", b, " = ",c
+			fin si
+	fin si
+Fin comparaison
