@@ -1,4 +1,4 @@
-4.2	Moyenne
+4.2 Moyenne
 -----------
 
 Ecrire le programme qui calcule la moyenne d'une série de nombres entrés au clavier.
