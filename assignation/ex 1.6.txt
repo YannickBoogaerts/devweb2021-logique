@@ -1,0 +1,9 @@
+1.6	moyenne
+-----------
+
+Ecrire le programme qui calcule et affiche la moyenne de 3 nombres entrés au clavier.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

@@ -1,0 +1,9 @@
+1.4	Permutation 3 variables
+---------------------------
+
+Ecrire le programme qui permute les valeurs de 3 variables.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
