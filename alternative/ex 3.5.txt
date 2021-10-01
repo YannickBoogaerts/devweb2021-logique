@@ -1,0 +1,21 @@
+3.5	TVA
+-------
+
+Ecrire un programme qui demande à l'utilisateur de choisir un taux de TVA et d'entrer un prix(hors TVA). Le programme affiche le taux choisi, le montant de la TVA et le prix TVA comprise.
+
+     Tva 6% (1) 
+     Tva 12% (2) 
+     Tva 21% (3) 
+     Tva 0 % (4) 
+     Sortie (0) 
+     Votre Choix :______
+     Prix (hors TVA) : ____ 
+     Le taux de TVA vaut : XXX
+     Le montant de la TVA est :  XXX
+     Le prix T.V.A.C vaut : XXX
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+       

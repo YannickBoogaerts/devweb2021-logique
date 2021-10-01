@@ -1,0 +1,15 @@
+3.4	Comparaison de 3 nombres
+----------------------------
+
+Écrire le programme qui compare 3 nombres entre eux. 
+Tenir compte d’une égalité possible des nombres.
+
+Attention : 
+   « 5 < 8 > 4 » n’indique pas la comparaison entre le 1er et le 3ème nombre.
+   On préférera par exemple « 4 < 5 < 8 ».
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+ 

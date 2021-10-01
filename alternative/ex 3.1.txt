@@ -1,0 +1,12 @@
+3.1	Equation 1er degré
+----------------------
+
+Écrire le programme qui résout l’équation du 1er degré: ax + b = 0
+
+Le programme demande à l'utilisateur une valeur pour a et pour b et donne si possible la valeur de x.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+ 

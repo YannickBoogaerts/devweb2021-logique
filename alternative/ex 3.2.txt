@@ -1,0 +1,10 @@
+3.2	Comparaison de 2 nombres
+----------------------------
+
+Écrire le programme qui compare deux nombres et qui indique quel est le plus grand ou s’ils sont égaux.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+ 
