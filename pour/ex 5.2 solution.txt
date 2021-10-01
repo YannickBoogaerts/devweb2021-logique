@@ -1,0 +1,48 @@
+Exercice 5.2: Somme d'une suite de nombres
+-------------------------------------------
+
+Écrire le programme qui affiche la somme des valeurs comprises entre deux nombres entrés au clavier.
+Les deux valeurs entrées font partie du total.
+
+Si les deux valeurs sont identiques, le total est égal à cette valeur.
+	Exemple :
+		Valeur 1 = 5
+		Valeur 2 = 9
+		Total = 5 + 6 + 7 + 8 + 9 = 35
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+
+Debut Suite   
+	variables locales
+		var nb1 :N <- 0
+		var nb2 :N <- 0
+		var val :N <- 0
+		var temp :N <- 0
+		var somme :N <- 0
+	fin variables locales
+	
+	afficher "Nombre 1 : "
+	saisir nb1
+	
+	afficher "Nombre 2 : "
+	saisir nb2
+	
+	si nb1 > nb2
+		alors
+			temp <- nb1
+			nb1 <- nb2
+			nb2 <- temp
+	fin si
+	
+	pour val allant de nb1 à nb2
+		somme <- somme + val
+	val suivant
+	
+	afficher somme
+	
+	// solution sans boucle
+   // afficher (nb1 + nb2) * (nb2-nb1 +1) /2
+Fin suite    
