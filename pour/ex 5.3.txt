@@ -1,0 +1,18 @@
+5.3	Découverte d’une valeur
+---------------------------
+
+Ecrire un programme qui demande à l’utilisateur de découvrir une valeur entre 0 et 100.
+  •  Le programme choisira la valeur de manière aléatoire *.
+  •  L’utilisateur entre des valeurs tant qu’elles sont différentes de la valeur choisie.
+  •  Après chaque entrée non valide le programme affiche si la valeur à découvrir est plus grande ou plus petite que celle entrée.
+
+
+* Fonction permettant la récupération d’un nombre aléatoire
+    fonction aléatoire (max : N):N
+    Retourne un nombre entier aléatoire entre 0 et max
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+ 
