@@ -1,0 +1,9 @@
+7.2	 Min max vecteur
+--------------------
+
+Ecrire le programme qui affiche le maximum et le minimum des valeurs d’un vecteur de nombres, ainsi que leur position dans le tableau.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

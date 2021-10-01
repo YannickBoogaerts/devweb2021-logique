@@ -1,0 +1,9 @@
+7.3	Vecteur X 2
+---------------
+
+Ecrire le programme qui complète le tableau de 16 éléments en doublant l'élément précédent. Le premier élément vaut 1.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

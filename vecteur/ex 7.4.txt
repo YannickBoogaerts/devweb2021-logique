@@ -1,0 +1,9 @@
+7.4	Inversion vecteur
+---------------------
+
+Ecrire le programme qui inverse un tableau de 10 nombres.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

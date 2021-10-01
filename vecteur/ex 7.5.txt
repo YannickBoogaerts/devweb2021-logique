@@ -1,0 +1,9 @@
+7.5	 Supprimer espaces
+----------------------
+
+Ecrire le programme qui déplace les caractères espaces à la fin d’un vecteur de caractères.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
