@@ -1,0 +1,9 @@
+2.6	Entier
+----------
+
+Écrire une expression qui teste si un nombre est entier
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

@@ -1,0 +1,9 @@
+2.3	Tintin
+----------
+
+Écrire une expression qui teste si un âge est compris entre 7 et 77 (bornes incluses).
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

@@ -1,0 +1,17 @@
+2.2	Tester une expression booléenne
+-----------------------------------
+
+L'expression "non A et non B" est-elle équivalente à "non(A ou B)" ?
+
+
+| A | B | non A | non B | non a et non B | A ou B | Non(A ou B) |
++---+---+-------+-------+----------------+--------+-------------+
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+|   |   |       |       |                |        |             |
+
