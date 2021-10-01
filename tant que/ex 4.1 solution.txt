@@ -10,7 +10,7 @@ Si la valeur est différente, un nouveau choix sera demandé.
 Solution
 --------
 
-Début 
+Début validation
    Variables locales
       var valeur :N <- 0
    Fin variables
@@ -26,4 +26,4 @@ Début
    
    afficher "votre choix est : ", valeur
    
-Fin       
+Fin validation
