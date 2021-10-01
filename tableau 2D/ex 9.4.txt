@@ -1,0 +1,9 @@
+9.4	Carré magique
+-----------------
+
+Ecrire le programme  qui vérifie que les sommes de chaque ligne, chaque colonne et des deux diagonales d’un tableau numérique carré sont les mêmes.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

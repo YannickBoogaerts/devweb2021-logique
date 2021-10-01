@@ -1,0 +1,9 @@
+9.3	Moyenne, min, max, par ligne
+--------------------------------
+
+Ecrire le programme  qui affiche la moyenne le maximum et le minimum de chaque ligne d’un tableau à deux dimensions.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
