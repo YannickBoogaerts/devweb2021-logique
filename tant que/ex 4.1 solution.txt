@@ -1,0 +1,29 @@
+4.1 Validation d'entrée
+-----------------------
+
+Ecrire le programme qui limite le choix de l'utilisateur aux valeurs 0, 1, 2, 3, 4.
+
+Si la valeur est différente, un nouveau choix sera demandé.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+
+Début 
+   Variables locales
+      var valeur :N <- 0
+   Fin variables
+   
+   Afficher "Choisisez entre les valeurs 0, 1, 2, 3, 4."
+   saisir valeur
+   
+   tant que valeur < 0 ou valeur > 4 ou valleur MOD 1 != 0
+      Afficher " Erreur de choix"
+      Afficher "Choisisez entre les valeurs 0, 1, 2, 3, 4."
+      saisir valeur
+   fin tant que
+   
+   afficher "votre choix est : ", valeur
+   
+Fin       
