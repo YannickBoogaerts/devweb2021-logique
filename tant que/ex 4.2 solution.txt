@@ -27,7 +27,7 @@ Début Moyenne
    
    si nbValeurs > 0
       alors
-         Afficher "La moyenne des ", nbValeurs, " est de : ", somme : nbValeurs
+         Afficher "La moyenne des ", nbValeurs, " valeurs est de : ", somme : nbValeurs
       sinon
          Afficher "Aucune valeurs entrées!"
    fin si
