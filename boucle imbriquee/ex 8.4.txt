@@ -1,0 +1,9 @@
+8.4	Nombres premiers
+--------------------
+
+Écrire le programme qui affiche les 100 premiers nombres premiers.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------

@@ -1,0 +1,11 @@
+8.3	Nombres parfaits
+--------------------
+
+Écrire le programme qui affiche les nombres parfaits inférieurs à 100. 
+
+Un nombre parfait est un entier égal à la somme de ses diviseurs sauf lui-même.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
