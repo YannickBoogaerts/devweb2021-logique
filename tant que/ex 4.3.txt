@@ -1,0 +1,94 @@
+4.3	Min max
+-----------
+
+Ecrire le programme qui calcule la plus grande et la plus petite valeur d'une série de nombres entrés au clavier.
+
+  •  La fin de la série sera annoncée par un 100. 
+  •  Le programme affichera également :
+     o  le plus grand;
+     o  le plus petit des nombres;
+     o  la position du premier maximum (optionnel);
+     o  la position du dernier maximum (optionnel);
+     o  le nombre d'occurrence du maximum (optionnel);
+     o  Idem pour le minimum (optionnel).
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+                  4   8   2  3  -1  8  -1 100
+	   max   ?    4   8   8  8   8  8   8  8
+	   pos   0    1   2   3  4   5  6   7  7
+	   min   ?    4   4   2
+	   max1  ?    1   2   2  2   2  2 
+	   maxD  ?    1   2   2  2   2  6
+	   
+	   
+Programme
+---------
+
+Debut minmax
+	Variables locales
+	  var entree :N <- 0
+	  var posActuelle :N <- 0
+	  var max :N <- 0
+	  var premPosMax :N <- 0
+	  var derPosMax :N <- 0
+	  var nbMax :N <-0
+	  var min :N <- 0
+	Fin variables
+	
+	afficher " Entrez un nombre : "
+	saisir entree
+	
+	si entree = 100
+		alors
+		  afficher "the end"
+		sinon
+		//première valeur
+			max <- entree
+			min <- entree
+			premPosMax <- 1
+			posActuelle <- 1
+			derPosMax <- 1
+			nbMax <- 1
+			
+		// valeurs suivantes
+			afficher " Entrez un nombre : "
+			saisir entree
+			tant que entree != 100
+				posActuelle <- posActuelle + 1
+				si entree >= max
+				 alors
+					si entree > max
+						alors
+							max <- entree
+							premPosMax <- posActuelle
+							nbMax <- 1
+						sinon
+							nbMax <- nbMax +1
+					finsi
+					derPosMax <- posActuelle
+				finsi
+				
+				si entree < min
+					alors
+						min <- entree
+				finsi
+					
+				
+				
+				afficher " Entrez un nombre : "
+				saisir entree
+			fin tant que
+	        afficher max 
+	        afficher premPosMax 
+	        afficher derPosMax
+	        afficher nbMax 
+	        afficher min 
+	fin si
+	
+fin minmax
+
+
+si entree = max
