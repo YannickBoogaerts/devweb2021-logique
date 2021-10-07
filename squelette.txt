@@ -1,0 +1,6 @@
+Début 
+   Variables locales
+   
+   Fin variables
+   
+Fin

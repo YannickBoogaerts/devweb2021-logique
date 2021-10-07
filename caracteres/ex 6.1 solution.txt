@@ -1,0 +1,54 @@
+6.1	 Recherche caractère
+------------------------
+
+Ecrire un programme qui demande à l’utilisateur d’entrer un texte et un caractère.
+
+Le programme affichera :
+  •  La première position où le caractère se trouve dans le texte.
+  •  La dernière position.
+  •  Le nombre de fois qu’il apparait.
+  
+Si le caractère ne se trouve pas dans le texte, le programme affichera un simple message.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+
+Début 
+   Variables locales
+      var texte     :T <- ""
+      var car       :C <- ' '
+      var pos       :N <- 0
+      var premPos   :N <- 0
+      var derPos    :N <- 0
+      var occurence :N <- 0
+   Fin variables
+   
+   Afficher "Recherche d'un caractère dans un texte"
+   Afficher "Texte : "
+   saisir texte
+   Afficher "Caractère : "
+   saisir car
+   
+   pour pos allant de 1 à longueur(texte)
+      si car = caract(texte, car)
+         alors
+            occurence <- occurence + 1
+            derPos <- pos
+            si occurence = 1
+               alors
+                  premPos <- pos
+            finsi
+      finsi
+   pos suivant
+   
+   si occurence > 0
+      alors
+         afficher "première position de ", car, " : ", premPos
+         afficher "dernière position de ", car, " : ", derPos
+         afficher "nombre d'occurence de ", car, " : ", occurence
+      sinon
+         afficher car, " n'est pas présent dans le texte entré !"
+   finsi
+Fin
