@@ -32,7 +32,7 @@ Début
    saisir car
    
    pour pos allant de 1 à longueur(texte)
-      si car = caract(texte, car)
+      si car = caract(texte, pos)
          alors
             occurence <- occurence + 1
             derPos <- pos
