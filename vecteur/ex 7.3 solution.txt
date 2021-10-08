@@ -1,0 +1,25 @@
+7.3	Vecteur X 2
+---------------
+
+Ecrire le programme qui complète le tableau de 16 éléments en doublant l'élément précédent. Le premier élément vaut 1.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+
+
+Début Vecteur2
+   Variables locales
+      Const TAILLE :N <- 16
+      var tab      :N[TAILLE]
+      var ind      :N <- 0
+   fin variable
+   
+   tab[1] <- 1
+   
+   pour ind allant de 2 à TAILLE
+      tab[ind] <- tab[ind-1] * 2
+   ind suivant
+   
+fin Vecteur2

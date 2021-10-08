@@ -1,0 +1,43 @@
+7.2	 Min max vecteur
+--------------------
+
+Ecrire le programme qui affiche le maximum et le minimum des valeurs d’un vecteur de nombres, ainsi que leur position dans le tableau.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+
+Début minMaxV
+   Variables locales
+      Const TAILLE :N <- 20
+      var tab      :N[TAILLE]
+      var ind      :N <- 0
+      var posMax   :N <- 0
+      var posMin   :N <- 0
+   Fin variables
+   
+   afficher "Entrez les ", Taille, "données à analyser "
+   pour ind allant de 1 à TAILLE
+      saisir tad[ind]
+   ind suivant
+   
+   posMax <- 1
+   posMin <- 1
+   
+   pour ind allant de 2 à TAILLE
+      si tab[ind] > tab[posMax]
+         alors
+            posMax <- ind
+      finsi
+      si tab[ind] < tab[posMin]
+            posMin <- ind
+      finsi
+   ind suivant
+   
+   afficher "max : ", tab[posMax]
+   afficher position du max : ", posMax
+   afficher "min : ", tab[posMin]
+   afficher position du min : ", posMin
+   
+Fin minMaxV
