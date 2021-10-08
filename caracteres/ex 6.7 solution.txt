@@ -1,0 +1,46 @@
+6.7	Inversion mot
+-----------------
+
+Ecrire un programme qui demande à l’utilisateur d’entrer un texte.
+
+Le programme affichera le texte en ayant inversé les mots.
+
+Remarque :
+  Les mots sont des sous-chaines ne contenant pas d’espace.
+
+-------------------------------------------------------------------------------------------
+
+Solution
+--------
+
+Début inversionMot
+   Variables locales
+      var texte  :T <- ""
+      var pos    :N <- 0
+      var result :T <- ""
+      var mot    :T <- ""
+      var car    :C <- ' '
+   Fin variables
+   
+   Afficher "Inversion des mots d'un texte"
+   Afficher " texte : "
+   Saisir texte
+   
+   pour pos allant de 1 à longueur(texte)
+   
+      car <- caract(texte, pos) 
+      si car != ' '
+         alors
+            mot <- mot (+) car
+         sinon
+            result <- ' ' (+) mot (+) result
+            mot <- ""
+      finsi
+   
+   pos Suivant
+   
+   result <- mot (+) result
+   
+   Afficher result
+   
+Fin inversionMot

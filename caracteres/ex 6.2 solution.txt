@@ -1,0 +1,88 @@
+6.2	 Recherche texte
+--------------------
+
+Ecrire un programme qui demande à l’utilisateur d’entrer un texte source et un texte à rechercher.
+
+Le programme affichera :
+  •  La première position où le texte à rechercher se trouve dans le texte source.
+  •  La dernière position.
+  •  Le nombre de fois qu’il apparait.
+  
+Si le texte à rechercher ne se trouve pas dans le texte source, le programme affichera un simple message.
+
+-------------------------------------------------------------------------------------------
+
+Exemple
+-------
+
+texteBase = "hello world here it's hell"
+texteCherche = "hel"
+
+première position : 1
+dernière position : 23
+occurence : 2
+
+Solution
+--------
+
+Début RechercheMot
+   Variables locales
+      var texteCherche :T <- ""
+      var texteBase    :T <- ""
+      var pos1         :N <- 0
+      var pos2         :N <- 0
+      var premPos      :N <- 0
+      var derPos       :N <- 0
+      var occurence    :N <- 0
+   Fin variables
+   
+   saisir texteBase
+   saisir texteCherche
+   
+   pos1 <- 1
+   pos2 <- longueur(texteCherche)+1
+   tant que pos2 <= longueur(texteBase)+1
+   
+      si texteCherche = souschaine(texteBase, pos1, pos2)
+         alors
+            pos1 <- pos1 + longueur(texteCherche)
+            occurence <- occurence + 1
+            derPos <- pos1
+            si occrurence = 1
+               alors
+                premPos <- pos1
+            finsi
+         sinon
+            pos1 <- pos1 + 1
+      finsi
+      pos2 <- pos1 + longueur(texteCherche)
+   
+   fintantque
+    
+   si occurence > 0
+      alors
+         afficher "première position de ", texteCherche, " : ", premPos
+         afficher "dernière position de ", texteCherche, " : ", derPos
+         afficher "nombre d'occurence de ", texteCherche, " : ", occurence
+      sinon
+         afficher texteCherche, " n'est pas présent dans le texte entré !"
+   finsi
+   
+    
+    
+   
+Fin RechercheMot
+
+
+
+
+
+         si texteCherche = souschaine(texteBase, pos1, pos2)
+                                                   1     4
+                                                   4     7
+                                                   5     8
+                                                   6     9
+                                                   ...
+                                                   23    26
+                                                   26    29
+         

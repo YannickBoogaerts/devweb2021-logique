@@ -1,0 +1,39 @@
+6.4	 Sous-chaine
+----------------
+
+Ecrire un programme qui demande à l’utilisateur un texte, une position de départ et une position de fin.
+
+Le programme affichera la sous-chaine composée des caractères se trouvant dans le texte entre la position de départ (comprise) et la position de fin (non comprise).
+Si les positions ne sont pas valides, le programme affiche un message d’erreur.
+
+Remarque : 
+Ceci sans utiliser la fonction sousChaine()  :)
+
+-------------------------------------------------------------------------------------------
+
+
+"toto va à la plage"
+
+4 - 8
+
+result <-""
+result <- result (+) caract(texte, 4)
+result <- result (+) caract(texte, 5)
+result <- result (+) caract(texte, 6)
+result <- result (+) caract(texte, 7)
+
+Solution
+--------
+
+
+
+   result <- ""
+   si fin <= longueur(texte) + 1 et deb > 0 et deb <= fin
+      alors
+         pour pos allant de deb à fin -1
+               result <- result (+) caract(texte, pos)
+         pos suivant
+         afficher result
+      sinon
+         afficher "positions non valides"
+   fin si
